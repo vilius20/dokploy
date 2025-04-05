@@ -5,8 +5,6 @@ services:
     image: phpmyadmin/phpmyadmin:latest
     environment:
       PMA_HOST: ${PMA_HOST}
-      PMA_USER: ${PMA_USER}
-      PMA_PASSWORD: ${PMA_PASSWORD}
     ports:
       - 80
     networks:
