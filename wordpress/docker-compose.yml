@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+  wordpress:
+    image: wordpress:latest
+    container_name: wordpress
+    ports:
+      - 80
+    environment:
+      WORDPRESS_DB_HOST: mysql:3306
+      WORDPRESS_DB_NAME: example_db
+      WORDPRESS_DB_USER: example_user
+      WORDPRESS_DB_PASSWORD: example_password
+    volumes:
+      - wordpress_data:/var/www/html
+    networks:
+      - dokploy-network
+    restart: always
+
+volumes:
+  wordpress_data:
+
+networks:
+  dokploy-network:
+    external: true
