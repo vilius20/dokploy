@@ -8,5 +8,3 @@ For WordPress Environment Settings:
 For PhpMyAdmin Environment Settings:
 
 `PMA_HOST=`  
-`PMA_USER=`  
-`PMA_PASSWORD=`
