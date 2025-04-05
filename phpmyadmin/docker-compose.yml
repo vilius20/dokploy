@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    environment:
+      PMA_HOST: ${WORDPRESS_DB_HOST}
+      PMA_USER: ${WORDPRESS_DB_HOST}
+      PMA_PASSWORD: ${WORDPRESS_DB_HOST}
+    ports:
+      - 80
+    networks:
+      - dokploy-network
+    restart: always
+
+networks:
+  dokploy-network:
+    external: true
