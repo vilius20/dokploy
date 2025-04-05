@@ -1,5 +1,7 @@
 For WordPress Environment Settings: 
 
+PORT 80
+
 Compose Path:  
 `./wordpress/docker-compose.yml`
 
@@ -9,6 +11,8 @@ Compose Path:
 `WORDPRESS_DB_PASSWORD=`
 
 For PhpMyAdmin Environment Settings:
+
+PORT 80
 
 Compose Path:  
 `./phpmyadmin/docker-compose.yml`
